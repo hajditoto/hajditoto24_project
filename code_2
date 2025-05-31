@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+void calculate(int *a,int *b,int *sum,int *prod,float *div)
+{
+    *sum=*a+*b;
+    *prod=*a * (*b);
+    *div=(float)*a/ *b;
+    printf("%d\n",*sum);
+    printf("%d\n",*prod);
+    printf("%.2f\n",*div);
+
+}
+int main()
+{
+    int a,b,sum,prod;
+    float div;
+    scanf("%d%d",&a,&b);
+    calculate(&a,&b,&sum,&prod,&div);
+    return 0;
+}
